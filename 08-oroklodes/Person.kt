@@ -1,1 +1,1 @@
-class Person(var name: String, var age: Int)
+open class Person(var name: String, var age: Int){}

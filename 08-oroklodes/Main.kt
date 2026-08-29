@@ -1,6 +1,5 @@
 fun main(){
-    val person = Person("Tibi",44)
-    println("Név: ${person.name}")
-    println("Életkor: ${person.age}")
-    
+    val student = Student("Tibi",44)
+    println("Név: ${student.name}")
+    println("Életkor: ${student.age}")
 }
