@@ -1,8 +1,11 @@
 class Student (
     var name: String, 
-    var age: Int, 
-    var grades : MutableList<Int> = mutableListOf())
+    age: Int,
+    private var grades : MutableList<Int> = mutableListOf())
     {
+    var age: Int = age
+        private set
+        
     fun addGrade(number: Int){
         grades.add(number)
     }
@@ -13,6 +16,11 @@ class Student (
     } 
     fun getAverage():Double{
         return grades.average()
+    }
+    fun changeAge(number : Int) {
+        if (number>=0) {
+            age=number
+        }
     }   
 }
 fun main(){
@@ -20,5 +28,8 @@ fun main(){
     student.addGrade(5)
     student.addGrade(3)
     student.addGrade(4)
+    student.introduce()
+    println(student.age)
+    student.changeAge(46)
     student.introduce()
 }
