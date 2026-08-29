@@ -17,6 +17,11 @@ class Student (
         println("Szia, $name vagyok, $age éves.")
         println("Jegyek: ${grades}")
         println("Átlag: ${getAverage()}")
+        if (getBestGrade() == null) {
+            println("Legjobb jegy: ?")
+        } else {
+            println("Legjobb jegy: ${getBestGrade()}")
+        }
     } 
     fun getAverage():Double{
         if (grades.isEmpty()){
@@ -30,6 +35,9 @@ class Student (
             age=number
         }
     }   
+    fun getBestGrade(): Int?{
+        return  grades.maxOrNull()
+    }
 }
 fun main(){
     val student = Student("Tibi", 44)
