@@ -1,3 +1,5 @@
-class Student(name: String, age: Int) : Person(name, age){
-    
+class Student(name: String, age: Int, var university: String ) : Person(name, age){
+    fun study(){
+        println("${name} tanul.")
+    }
 }
