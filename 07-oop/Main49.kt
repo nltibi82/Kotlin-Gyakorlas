@@ -57,6 +57,9 @@ class Student (
             this.name=name
         }
     }
+    fun getGrades():List<Int>{
+        return grades.toList()
+    }
 }
 fun main(){
     val student = Student("Tibi", 44)
