@@ -19,7 +19,11 @@ class Student (
         println("Átlag: ${getAverage()}")
     } 
     fun getAverage():Double{
-        return grades.average()
+        if (grades.isEmpty()){
+            return 0.0
+        } else {
+            return grades.average()
+        }
     }
     fun changeAge(number : Int) {
         if (number>=0) {
@@ -29,11 +33,11 @@ class Student (
 }
 fun main(){
     val student = Student("Tibi", 44)
+    val student2 = Student("Anna", 40)
     student.addGrade(5)
     student.addGrade(3)
     student.addGrade(4)
     student.addGrade(6)
     student.introduce()
-    student.changeAge(46)
-    student.introduce()
+    student2.introduce()  
 }
