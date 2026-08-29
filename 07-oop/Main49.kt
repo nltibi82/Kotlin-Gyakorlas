@@ -1,8 +1,9 @@
 class Student (var name: String, var age: Int){
-    
+    fun introduce() {
+        println("Szia, $name vagyok, $age éves.")
+    }    
 }
 fun main(){
     val student = Student("Tibi", 44)
-    println("Név: ${student.name}")
-    println("Életkor: ${student.age}")
+    student.introduce()
 }
