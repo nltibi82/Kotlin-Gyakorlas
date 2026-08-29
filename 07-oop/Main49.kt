@@ -22,6 +22,12 @@ class Student (
         } else {
             println("Legjobb jegy: ${getBestGrade()}")
         }
+        val gwg=getWorstGrade()
+        if (gwg == null) {
+             println("Legrosszabb jegy: ?")
+        } else {
+            println("Legrosszabb jegy: $gwg")
+        }
     } 
     fun getAverage():Double{
         if (grades.isEmpty()){
@@ -37,6 +43,9 @@ class Student (
     }   
     fun getBestGrade(): Int?{
         return  grades.maxOrNull()
+    }
+    fun getWorstGrade(): Int?{
+        return  grades.minOrNull()
     }
 }
 fun main(){
