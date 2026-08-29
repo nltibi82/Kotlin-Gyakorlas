@@ -9,7 +9,11 @@ class Student (
     fun introduce() {
         println("Szia, $name vagyok, $age éves.")
         println("Jegyek: ${grades}")
-    }    
+        println("Átlag: ${getAverage()}")
+    } 
+    fun getAverage():Double{
+        return grades.average()
+    }   
 }
 fun main(){
     val student = Student("Tibi", 44)
