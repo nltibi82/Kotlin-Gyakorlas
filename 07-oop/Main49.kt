@@ -7,7 +7,11 @@ class Student (
         private set
         
     fun addGrade(number: Int){
-        grades.add(number)
+        if( number>0 && number<=5){
+            grades.add(number)
+        } else {
+            println("Érvénytelen jegy!")
+        }
     }
     fun introduce() {
         println("Szia, $name vagyok, $age éves.")
@@ -28,8 +32,8 @@ fun main(){
     student.addGrade(5)
     student.addGrade(3)
     student.addGrade(4)
+    student.addGrade(6)
     student.introduce()
-    println(student.age)
     student.changeAge(46)
     student.introduce()
 }
