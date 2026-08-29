@@ -1,10 +1,13 @@
 class Student (
-    var name: String, 
+    name: String, 
     age: Int,
     private var grades : MutableList<Int> = mutableListOf())
     {
-    var age: Int = age
-        private set
+    var age: Int = age 
+    private set
+    
+    var name: String =name 
+    private set
         
     fun addGrade(number: Int){
         if( number>0 && number<=5){
@@ -47,6 +50,13 @@ class Student (
     fun getWorstGrade(): Int?{
         return  grades.minOrNull()
     }
+    fun changeName(name: String){
+        if(name.isEmpty()) {
+            println("A név nem lehet üres!")
+        } else {
+            this.name=name
+        }
+    }
 }
 fun main(){
     val student = Student("Tibi", 44)
@@ -57,4 +67,8 @@ fun main(){
     student.addGrade(6)
     student.introduce()
     student2.introduce()  
+    student.changeName("Péter")
+    student.introduce()
+    student.changeName("")
+    student.introduce()
 }
