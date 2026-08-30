@@ -2,4 +2,8 @@ class Student(name: String, age: Int, var university: String ) : Person(name, ag
     fun study(){
         println("${name} tanul.")
     }
+    override fun introduce(){
+        super.introduce()
+        println("Egyetem: ${university}")
+    }
 }

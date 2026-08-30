@@ -1,7 +1,7 @@
 fun main(){
     val student = Student("Tibi",44, "GDE")
-    println("Név: ${student.name}")
-    println("Életkor: ${student.age}")
-    println("Egyetem: ${student.university}")
+    val person: Person = Student("Anna", 40, "BME")
+    student.introduce()
     student.study()
+    person.introduce()
 }
