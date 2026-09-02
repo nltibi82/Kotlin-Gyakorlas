@@ -10,8 +10,7 @@ fun main(){
     peoples.add(teacher2)
     for (people in peoples){
         people.introduce()
+        people.work()
     }
     student.study()
-    person.work()
-    teacher2.work()
 }
