@@ -11,6 +11,7 @@ fun main(){
     for (people in peoples){
         people.introduce()
         people.work()
+        println(people.name)
     }
     student.study()
 }
