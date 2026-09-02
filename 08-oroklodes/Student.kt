@@ -6,4 +6,7 @@ class Student(name: String, age: Int, var university: String ) : Person(name, ag
         super.introduce()
         println("Egyetem: ${university}")
     }
+    override fun work(){
+        println("${name} tanul.")
+    }
 }
