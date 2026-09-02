@@ -13,6 +13,7 @@ fun main(){
     peoples.add(teacher2)
     teachers.add(teacher)
     teachers.add(Teacher("Béla",50,"Java"))
+    teachers.add(GuestSpeaker("Kotlin OOP"))
     if (teacher2 is CanTeach) {
         teacher2.teach()}
     for (people in peoples){
