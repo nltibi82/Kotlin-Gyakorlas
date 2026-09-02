@@ -11,10 +11,8 @@ fun main(){
     for (people in peoples){
         people.introduce()
         people.work()
+        people.study()
         println(people.name)
-        if (people is Student) {
-            people.study()
-        }
         if (people is Teacher) {
             println(people.subject)
         }

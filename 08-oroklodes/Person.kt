@@ -6,4 +6,7 @@ open class Person(var name: String, var age: Int){
     open fun work(){
         println("A személy dolgozik.")
     }
+    open fun study(){
+        println("A személy tanul.")
+    }
 }
