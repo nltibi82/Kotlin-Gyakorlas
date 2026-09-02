@@ -12,6 +12,7 @@ fun main(){
     peoples.add(teacher)
     peoples.add(teacher2)
     teachers.add(teacher)
+    teachers.add(Teacher("Béla",50,"Java"))
     if (teacher2 is CanTeach) {
         teacher2.teach()}
     for (people in peoples){
@@ -20,6 +21,9 @@ fun main(){
         people.study()
         people.teach()
         println(people.name)
+    }
+    for (teacher in teachers) {
+        teacher.teach()
     }
     canteach.teach()
     person2.study()
