@@ -12,6 +12,9 @@ fun main(){
         people.introduce()
         people.work()
         println(people.name)
+        if (people is Student) {
+            people.study()
+        }
     }
     student.study()
 }
