@@ -15,6 +15,8 @@ fun main(){
         if (people is Student) {
             people.study()
         }
+        if (people is Teacher) {
+            println(people.subject)
+        }
     }
-    student.study()
 }
