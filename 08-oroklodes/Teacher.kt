@@ -6,4 +6,7 @@ class Teacher(name: String, age: Int, var subject : String): Person(name,age){
     override fun work(){
         println("${name} tanít.")
     }
+    override fun teach() {
+        println("${name} a ${subject} tárgyat tanítja.")
+    }
 }
