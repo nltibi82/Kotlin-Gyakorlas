@@ -6,10 +6,14 @@ fun main(){
     val teacher2: Person = Teacher("Éva", 55, "Matek")
     val canteach: CanTeach = Teacher("Kati", 40, "Közgáz")
     val person2: Person = Teacher("Kati", 40, "Közgáz")
+    val teachers = mutableListOf<CanTeach>()
     peoples.add(student)
     peoples.add(person)
     peoples.add(teacher)
     peoples.add(teacher2)
+    teachers.add(teacher)
+    if (teacher2 is CanTeach) {
+        teacher2.teach()}
     for (people in peoples){
         people.introduce()
         people.work()
