@@ -1,4 +1,4 @@
-class Teacher(name: String, age: Int, var subject : String): Person(name,age){
+class Teacher(name: String, age: Int, var subject : String): Person(name,age), CanTeach{
     override fun introduce(){
         super.introduce()
         println("Tantárgy: ${subject}")

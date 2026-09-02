@@ -4,6 +4,7 @@ fun main(){
     val person: Person = Student("Anna", 40, "BME")
     val teacher = Teacher("Anna", 35, "Kotlin")
     val teacher2: Person = Teacher("Éva", 55, "Matek")
+    var canteach: CanTeach = Teacher("Kati", 40, "Közgáz")
     peoples.add(student)
     peoples.add(person)
     peoples.add(teacher)
@@ -15,4 +16,5 @@ fun main(){
         people.teach()
         println(people.name)
     }
+    canteach.teach()
 }

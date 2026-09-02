@@ -1,0 +1,3 @@
+interface CanTeach{
+    fun teach()
+}
