@@ -11,7 +11,7 @@ fun main(){
     peoples.add(teacher2)
     teachers.add(teacher)
     teachers.add(Teacher("Béla",50,"Java"))
-    teachers.add(GuestSpeaker("Kotlin OOP"))
+    teachers.add(GuestSpeaker("Kotlin OOP","Kotlin"))
     for (people in peoples){
         people.introduce()
         people.work()
