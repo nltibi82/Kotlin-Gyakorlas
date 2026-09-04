@@ -1,0 +1,1 @@
+data class StudentData(val name: String, val age: Int, val university: String)

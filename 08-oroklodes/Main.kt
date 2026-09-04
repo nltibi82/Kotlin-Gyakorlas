@@ -1,4 +1,8 @@
 fun main(){
+    val studentData1 = StudentData("Tibi",44,"GDE")
+    val studentData2 = StudentData("Tibi",44,"GDE")
+    val studentData3 = studentData2.copy(age=45)
+    val studentData4 = studentData2.copy(age=45, university="BME")
     val peoples = mutableListOf<Person>()
     val student = Student("Tibi",44, "GDE")
     val person: Person = Student("Anna", 40, "BME")
@@ -23,4 +27,8 @@ fun main(){
         teacher.teach()
         println(teacher.description)
     }
+    println(studentData1)
+    println(studentData2)
+    println(studentData3)
+    println(studentData4)
 }
