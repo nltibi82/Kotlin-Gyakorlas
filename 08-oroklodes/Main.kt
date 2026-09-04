@@ -21,5 +21,6 @@ fun main(){
     }
     for (teacher in teachers) {
         teacher.teach()
+        println(teacher.description)
     }
 }
